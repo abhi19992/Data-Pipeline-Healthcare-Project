@@ -10,7 +10,7 @@ This repository demonstrates a data engineering workflow using Python, PostgreSQ
 data-engineer-assignment/
 │
 ├── data/                   # Raw CSV files (messages.csv, statuses.csv)
-|── images/                 # Visualization images for plotly
+|── images/                 # Visualization images after plotting in python using plotly
 ├── scripts/
 │   ├── db.py               # Loads DB credentials and creates SQLAlchemy engine
 │   ├── extraction.py       # Creates tables in PostgreSQL
@@ -21,7 +21,7 @@ data-engineer-assignment/
 │   └── message_enriched.sql # SQL for creating the message_enriched table
 |   └── data_qulaity_checker.sql # SQL for duplicated records and data qulaity checks.
 ├── .env                    # Environment variables (not committed)
-├── requirements.txt        # Python dependencies
+├── requirement.txt        # Python dependencies
 └── README.md               # Project documentation
 ```
 
@@ -108,6 +108,7 @@ Place `messages.csv` and `statuses.csv` in the `data/` folder.
 
 - **plots.py**  
   Generates interactive visualizations using Plotly from the enriched data.
+  The output files are stored in images folder as well.
 
 ---
 
