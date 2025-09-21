@@ -10,6 +10,7 @@ This repository demonstrates a data engineering workflow using Python, PostgreSQ
 data-engineer-assignment/
 │
 ├── data/                   # Raw CSV files (messages.csv, statuses.csv)
+|── images/                 # Visualization images for plotly
 ├── scripts/
 │   ├── db.py               # Loads DB credentials and creates SQLAlchemy engine
 │   ├── extraction.py       # Creates tables in PostgreSQL
