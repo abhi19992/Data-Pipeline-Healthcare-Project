@@ -112,6 +112,29 @@ Place `messages.csv` and `statuses.csv` in the `data/` folder.
 
 ---
 
+## Visualization Results
+- **1.**
+   Active & Total Users Per Week
+   ---------------------------------
+  
+<img width="2864" height="1860" alt="image" src="https://github.com/user-attachments/assets/963dad36-1283-4a3b-82ba-c5bbd4a2ecd6" />
+
+- **2.**
+   Fraction of non-failed outbound messages read
+   ---------------------------------
+
+<img width="2876" height="1788" alt="image" src="https://github.com/user-attachments/assets/4b40a917-0389-4aed-a8ae-cfc4cceb8dd1" />
+
+- **3.**
+    Time to read distribution
+   ---------------------------------
+<img width="2790" height="1830" alt="image" src="https://github.com/user-attachments/assets/31489b8a-2bfd-4ac0-9fd3-894f43d95652" />
+
+- **4.**
+    Outbound messages in last week by status
+   ---------------------------------
+<img width="2844" height="1850" alt="image" src="https://github.com/user-attachments/assets/61c2255c-07fb-4231-8971-093d53b477f8" />
+
 ## 📝 Notes
 
 - All credentials are managed via the `.env` file for security.
