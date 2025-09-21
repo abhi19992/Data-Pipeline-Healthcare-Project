@@ -18,6 +18,7 @@ data-engineer-assignment/
 │   └── plots.py            # Generates visualizations from enriched data
 ├── sql/
 │   └── message_enriched.sql # SQL for creating the message_enriched table
+|   └── data_qulaity_checker.sql # SQL for duplicated records and data qulaity checks.
 ├── .env                    # Environment variables (not committed)
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
@@ -30,7 +31,7 @@ data-engineer-assignment/
 ### 1. Clone the repository
 
 ```sh
-git clone <repo-url>
+git clone https://github.com/abhi19992/Data-Pipeline-Healthcare-Project.git
 cd data-engineer-assignment
 ```
 
@@ -47,7 +48,7 @@ pip install -r requirements.txt
 
 ### 4. Configure environment variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the scripts:
 
 ```
 DB_USER=your_username
@@ -119,6 +120,3 @@ Place `messages.csv` and `statuses.csv` in the `data/` folder.
 
 **Author:**  
 Abhijeet
-
-**License:**  
-MIT (or specify

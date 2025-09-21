@@ -25,6 +25,7 @@ ORDER BY week;
 users = pd.read_sql(users_sql, engine)
 fig1 = px.line(users, x='week', y=['active_users','total_users'], title="Active vs Total Users per Week")
 fig1.show()
+fig1.write_image("images/fig1.png")
 
 # 2️. Fraction of non-failed outbound messages read
 # ---------------------------------
@@ -42,6 +43,8 @@ fig = px.pie(df, names="status", values="count",
                 color="status",
                 color_discrete_map={"read_count": "green", "remaining_count": "gray"})
 fig.show()
+fig.write_image("images/fig.png")
+
 
 # 3. Time to read distribution
 # ---------------------------------
@@ -55,6 +58,7 @@ WHERE LOWER(direction)='outbound' AND failed_timestamp IS NULL AND read_timestam
 time_df = pd.read_sql(time_sql, engine)
 fig2 = px.histogram(time_df, x='time_to_read_minutes', nbins=20, title="Distribution of Time to Read (minutes)")
 fig2.show()
+fig2.write_image("images/fig2.png")
 
 # 4. Outbound messages in last week by status
 # ---------------------------------
@@ -76,3 +80,4 @@ status_counts = status_counts.melt(var_name='status', value_name='count')
 print(status_counts)
 fig3 = px.bar(status_counts, x='status', y='count', title='Outbound Messages in Last Week by Status')
 fig3.show()
+fig3.write_image("images/fig3.png")
